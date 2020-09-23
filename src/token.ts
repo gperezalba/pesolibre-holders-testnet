@@ -3,7 +3,7 @@ import { Transfer } from "../generated/Token/Token";
 import { Transaction } from "../generated/schema";
 
 export function handleTransfer(event: Transfer): void {
-    /*let txId = event.transaction.hash.toHexString().concat("-").concat(event.logIndex.toString());
+    let txId = event.transaction.hash.toHexString().concat("-").concat(event.logIndex.toString());
     let transfer = Transaction.load(txId);
 
     if (transfer == null) {
@@ -15,5 +15,5 @@ export function handleTransfer(event: Transfer): void {
     transfer.amount = event.params.value;
     transfer.block = event.block.number;
 
-    transfer.save();*/
+    transfer.save();
 }
